@@ -16,10 +16,10 @@
   box-sizing: border-box;
 }
 
-html, body {
+html, body,main {
   height: 100%;
   font-family: Arial, sans-serif;
-  background-color: #e2d3f0;
+  background-color: var(--lilas-secundario);
 }
 
 
@@ -131,8 +131,11 @@ html, body {
 }
 
 .rodape {
-  display: flex;
+  position: fixed;
+  bottom: 0;
+  left: 0;
   width: 100%;
+  display: flex;
   justify-content:center;
   background-color: var(--roxo-principal);
   color: var(--preto-texto);
@@ -140,6 +143,7 @@ html, body {
   font-family: 'inter';
   font-weight: bold;
   padding: 15px;
+  z-index: 1000; 
 }
 
 .rodape img {
@@ -417,7 +421,7 @@ html, body {
 .pagina_contato {
   width: 100%;
   height: auto;
-  
+  flex: 1;
 }
 
 .contatos {
