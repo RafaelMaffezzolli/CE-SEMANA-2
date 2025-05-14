@@ -256,43 +256,46 @@ body {
 .doe-info {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center; /* Centraliza os blocos */
   background-color: #d7c1ec;
   padding: 40px 20px;
-  text-align: center;
   font-family: 'Inter';
-  gap: 20px;
+  gap: 40px; /* aumenta o espaço entre os blocos */
+  padding-top: 80px;
 }
 
 .doe-info img {
-  width: 30px;
-  margin-right: 10px;
+  width: 50px;
 }
 
 .doe-info div {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 10px;
+  justify-content: flex-start; /* alinha o conteúdo à esquerda */
+  width: 100%;
+  max-width: 500px; /* limita a largura para não esticar demais */
+  gap: 15px;
 }
 
 .doe-info p {
   font-weight: bold;
-  font-size: 18px;
+  font-size: 30px;
+  margin: 0;
+  text-align: left; /* garante que o texto fique à esquerda */
 }
 
 .branca-section {
   display: flex;
-  flex-direction: row;
-  align-items: center;
   justify-content: center;
-  gap: 30px;
   background-color: #d7c1ec;
   padding: 40px 20px;
+  margin-bottom: 0;
+  width: 100vw;
+  box-sizing: border-box;
 }
 
 .branca-img {
-  width: 160px;
+  width: 3000px;
   height: auto;
   border-radius: 10px;
 }
@@ -306,28 +309,54 @@ body {
 
 
 .branca-text {
-  max-width: 600px;
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 25px;
   color: #000;
-  background-color: #e6d3f1;
-  padding: 20px;
-  border-radius: 10px;
   text-align: justify;
+  flex-grow: 1;
+  min-width: 0;
 }
 
 .branca-box {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
   gap: 20px;
-  padding: 20px;
-  border: 3px solid black;
-  border-radius: 10px;
   background-color: #e6d3f1;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 20px;
   max-width: 900px;
-  margin: 0 auto;
-  flex-wrap: wrap;
+  width: 100%;
+  box-sizing: border-box;
+  flex-wrap: nowrap;
+}
+
+.branca-box {
+  display: flex;
+  align-items: flex-start; /* para alinhar pelo topo */
+  gap: 20px;
+  background-color: #e6d3f1;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 900px;
+  width: 100%;
+  box-sizing: border-box;
+  flex-wrap: nowrap; /* garantir que fique na mesma linha */
+}
+
+
+.branca-text-img-box img {
+  width: 150px; /* tamanho da imagem */
+  border-radius: 10px;
+}
+
+.branca-text-img-box img {
+  width: 200px; /* tamanho fixo da imagem */
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  flex-shrink: 0; /* não encolhe */
 }
 /* doacoes */
