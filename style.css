@@ -46,13 +46,12 @@ body {
 .menu{
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 0 20px 0 0;
 }
 
 .menu div {
   display: flex;
   align-items: center;
-  justify-content: center;
   gap: 5px;
 }
 
@@ -60,7 +59,7 @@ body {
   color: var(--branco-texto);
   font-weight: bold;
   text-align: center;
-  text-decoration: none;
+  text-decoration: none;;
 }
 
 .banner {
