@@ -16,7 +16,7 @@
   box-sizing: border-box;
 }
 
-body {
+html, body {
   height: 100%;
   font-family: Arial, sans-serif;
   background-color: #e2d3f0;
@@ -130,9 +130,8 @@ body {
   text-align:center;
 }
 
-.footer {
+.rodape {
   display: flex;
-  margin-top: auto;
   width: 100%;
   justify-content:center;
   background-color: var(--roxo-principal);
@@ -143,7 +142,7 @@ body {
   padding: 15px;
 }
 
-.footer img {
+.rodape img {
   width: 7%;
   align-items: center;
 }
@@ -415,6 +414,12 @@ body {
 
 
 /* pagina entre em contato */
+.pagina_contato {
+  width: 100%;
+  height: auto;
+  
+}
+
 .contatos {
   display: flex;
   flex-direction: column;
