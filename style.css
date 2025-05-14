@@ -262,7 +262,7 @@ html, body,main {
   display: flex;
   flex-direction: column;
   align-items: center; /* Centraliza os blocos */
-  background-color: #d7c1ec;
+  background-color: var(--lilas-secundario);
   padding: 40px 20px;
   font-family: 'Inter';
   gap: 40px; /* aumenta o espaço entre os blocos */
@@ -292,7 +292,7 @@ html, body,main {
 .branca-section {
   display: flex;
   justify-content: center;
-  background-color: #d7c1ec;
+  background-color: var(--lilas-secundario);
   padding: 40px 20px;
   margin-bottom: 0;
   width: 100vw;
@@ -367,7 +367,7 @@ html, body,main {
 /* doacoes */
 /* estatistica */
 .estatisticas-mensais {
-  background-color: #d7c1ec;
+  background-color: var(--lilas-secundario);
   padding: 60px 20px;
   font-family: 'Inter', sans-serif;
   color: #000;
