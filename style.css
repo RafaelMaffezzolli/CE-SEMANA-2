@@ -293,11 +293,18 @@ body {
 }
 
 .branca-img {
-  width: 300px;
-  height: 300px;
-  background-color: #ccc;
+  width: 160px;
+  height: auto;
   border-radius: 10px;
 }
+
+.branca-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
 
 .branca-text {
   max-width: 600px;
