@@ -3,7 +3,7 @@
 
 :root {
   --roxo-principal: #514675;
-  --lilas-secundario: #d0b8e3;
+  --lilas-secundario: #9F87AE;
   --branco-texto: #fff;
   --fonte-bannerPrincipal: 'Jacques Francois', sans-serif;
   --preto-texto: #000;
@@ -98,19 +98,30 @@ body {
   font-weight: bold;
 }
 
-
+.section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--lilas-secundario);
+  padding: 50px 20px;
+}
 
 .section h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-family: "Concert One";
   font-size: 34px;
 }
 
 .section h2 img {
-  width: 3%;
+  width: 10%;
+  padding: 10px;
 }
 
 .section p {
-  color: var(--branco-texto);
+  color: var(--preto-texto);
   font-family: 'inter';
   font-weight: bold;
   font-size: 20px;
