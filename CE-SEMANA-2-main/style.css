@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Inter:wght@400;600&family=Jacques+Francois&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+  --roxo-principal: #514675;
+  --lilas-secundario: #9F87AE;
+  --branco-texto: #fff;
+  --fonte-bannerPrincipal: 'Jacques Francois', sans-serif;
+  --preto-texto: #000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background-color: #e2d3f0;
+}
+
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--roxo-principal);
+  color: var(--branco-texto);
+  padding: 10px 0px 0px 10px;
+}
+
+.top-bar img {
+  width: 10%;
+  height: 10%;
+}
+
+.logo-branca img {
+  width: 20%;
+  height: 15%;
+  padding: 0px 0px 0px 10px;
+}
+
+.menu{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.menu div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.menu a {
+  color: var(--branco-texto);
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+}
+
+.banner {
+  background-color: var(--preto-texto);
+  color: var(--branco-texto);
+  text-align: left;
+  position: relative;
+}
+
+.banner img {
+  width: 100%;
+  opacity: 0.6;
+}
+
+.banner-text {
+  position: absolute;
+  top: 15%;
+  left: 10%;
+  font-size: 80px;
+  font-family: var(--fonte-bannerPrincipal);
+}
+
+.denunciar-button {
+  width: 10%;
+  height: 5%;
+  border-radius: 10px;
+  font-size: 20px;
+  position: absolute;
+  top: 70%;
+  left: 84%;
+  background-color: var(--roxo-principal);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--lilas-secundario);
+  padding: 50px 20px;
+}
+
+.section h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Concert One";
+  font-size: 34px;
+}
+
+.section h2 img {
+  width: 10%;
+  padding: 10px;
+}
+
+.section p {
+  color: var(--preto-texto);
+  font-family: 'inter';
+  font-weight: bold;
+  font-size: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align:center;
+}
+
+.footer {
+  display: flex;
+  justify-content:center;
+  background-color: var(--roxo-principal);
+  color: var(--preto-texto);
+  text-align: center;
+  font-family: 'inter';
+  font-weight: bold;
+  padding: 15px;
+}
+
+.footer img {
+  width: 7%;
+  align-items: center;
+}
+
+.footer a {
+  color: var(--preto-texto);
+  text-decoration: none;
+  font-family: 'inter';
+  font-weight: bold;
+  margin: 0 10px;
+}
+
+.social {
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  gap:5px;
+}
+
+
+.menu a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: var(--branco-texto);
+  font-weight: bold;
+}
+
+.alerta {
+  background: url('/mnt/data/eb9e2c54-312a-4f70-b0d4-c1ffce28bc17.png') no-repeat center/cover;
+  padding: 50px 20px;
+  text-align: center;
+  background-blend-mode: darken;
+  background-color: #000;
+}
+
+.alerta p {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
