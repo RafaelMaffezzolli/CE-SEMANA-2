@@ -529,14 +529,14 @@ input::placeholder {
 }
 /*estatisticas*/
 .conteudo-main {
-  background-color: #dbc5e1;
+  background-color: var(--lilas-secundario);
   font-family: sans-serif;
   padding: 20px;
   color: #000;
 }
 
 .box {
-  background-color: #c0a7d2;
+  background-color: #817CAD;
   padding: 20px;
   margin-bottom: 20px;
   border-radius: 10px;
@@ -551,7 +551,7 @@ input::placeholder {
 }
 
 .box.destaque {
-  background-color: #b28dc6;
+  background-color: #817CAD;
   flex-direction: column;
   text-align: center;
 }
@@ -561,7 +561,7 @@ input::placeholder {
 }
 
 .link-inscricao {
-  font-size: 0.9em;
+  font-size: 16px;
   word-break: break-word;
 }
 
@@ -572,7 +572,7 @@ input::placeholder {
 
 .botao-estatisticas {
   padding: 10px 20px;
-  background-color: #8374b6;
+  background-color: var(--roxo-principal);
   color: white;
   border: none;
   border-radius: 5px;
