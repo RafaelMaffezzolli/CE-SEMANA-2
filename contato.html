@@ -1,72 +1,88 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ACAPRA - Proteção Animal</title>
-    <link rel="stylesheet" href="./denuncie.html">
-    <link rel="stylesheet" href="./paginaInicial.html">
-    <link rel="stylesheet" href="style.css">
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ACAPRA - Proteção Animal</title>
+  <link rel="stylesheet" href="./denuncie.html">
+  <link rel="stylesheet" href="./paginaInicial.html">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./stylepop.css">
+</head>
 
-  <body>
-    <header class="top-bar">
-      <div class="logo-branca">
-        <img onclick="window.location.href='PaginaInicial.html'" src="./imagens/logo.branca.nova.PNG" alt="Logo">
+<body>
+  <header class="top-bar">
+    <div class="logo-branca">
+      <img onclick="window.location.href='PaginaInicial.html'" src="./imagens/logo.branca.nova.PNG" alt="Logo">
+    </div>
+    <nav class="menu">
+      <div>
+        <img src="./imagens/maozinha.png" alt="Mãozinha de Doação">
+        <a href="#" onclick="window.location.href='doacoes.html'" class="maozinha"> DOAÇÕES</a>
       </div>
-      <nav class="menu">
-        <div>
-          <img src="./imagens/maozinha.png" alt="Mãozinha de Doação">
-          <a href="#" onclick="window.location.href='doacoes.html'" class="maozinha"> DOAÇÕES</a>
-        </div>
-        <div>
-          <img src="./imagens/jornal.png" alt="Jornal">
-          <a href="#" onclick="window.location.href='noticias.html'" class="jornal"> NOTÍCIAS</a>
-        </div>
-        <div>
-          <img src="./imagens/phone.png" alt="Telefone" style="width: 7%;">
-          <a href="#" class="fone"> ENTRE EM CONTATO</a>
-        </div>
-      </nav>
-    </header>
-    <main class="pagina_contato" >
-      <div class="contatos">
-        <div>
-          <img src="./imagens/instagram.png" alt="logo instagram">
-          <a href="https://www.instagram.com/acaprabrusquesc/">@acaprabrusquesc</a>
-        </div>
-        <div>
-          <img src="./imagens/email.png" alt="logo de uma carta de email">
-          <p>acapra@outlook.com</p>
-        </div>
-        <div>
-          <img src="./imagens/phone.png" alt="logo telefone" style="filter: brightness(0) invert(0);">
-          <p>(47) 99999-9999</p>
-        </div>
+      <div>
+        <img src="./imagens/jornal.png" alt="Jornal">
+        <a href="#" onclick="window.location.href='noticias.html'" class="jornal"> NOTÍCIAS</a>
       </div>
-      <div class="formulario">
-        <h2>Entre em contato com a gente: </h2>
-        <input type="text" placeholder="Nome">
-        <input type="telephone" placeholder="Telefone">
-        <input type="email" placeholder="Email">
-        <div class="botao_formulario">
-          <button type="submit">Enviar</button>
-        </div>
+      <div>
+        <img src="./imagens/phone.png" alt="Telefone" style="width: 7%;">
+        <a href="#" class="fone"> ENTRE EM CONTATO</a>
       </div>
-    </main>
-    <footer >
-      <div class="rodape" >
-        <div class="social">
-          <a href="#"></a>
-          <img src="./imagens/instagram.png" alt="logo instagram">@acaprabrusquesc</a>
-        </div>
-        <div class="social">
-          <img src="./imagens/pix.png" alt="logo pix" style="width: 25px;">
-          <p>Doe através no pix: 03.772.251.0001-82</p>
-        </div>
+    </nav>
+  </header>
+  <main class="pagina_contato">
+    <div class="contatos">
+      <div>
+        <img src="./imagens/instagram.png" alt="logo instagram">
+        <a href="https://www.instagram.com/acaprabrusquesc/">@acaprabrusquesc</a>
       </div>
-    </footer>
-  </body>
+      <div>
+        <img src="./imagens/email.png" alt="logo de uma carta de email">
+        <p>acapra@outlook.com</p>
+      </div>
+      <div>
+        <img src="./imagens/phone.png" alt="logo telefone" style="filter: brightness(0) invert(0);">
+        <p>(47) 99999-9999</p>
+      </div>
+    </div>
+    <div class="formulario">
+      <h2>Entre em contato com a gente: </h2>
+      <input type="text" placeholder="Nome">
+      <input type="telephone" placeholder="Telefone">
+      <input type="email" placeholder="Email">
+      <div class="botao_formulario">
+        <button type="submit"  onclick="abrirPopup()">Enviar</button>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="rodape">
+      <div class="social">
+        <a href="#"></a>
+        <img src="./imagens/instagram.png" alt="logo instagram">@acaprabrusquesc</a>
+      </div>
+      <div class="social">
+        <img src="./imagens/pix.png" alt="logo pix" style="width: 25px;">
+        <p>Doe através no pix: 03.772.251.0001-82</p>
+      </div>
+    </div>
+  </footer>
+  <div class="popup-overlay" id="contatoPopup">
+  <div class="popup-content">
+    <p>ENVIO CONFIRMADO!</p>
+    <button onclick="fecharPopup()">OK</button>
+  </div>
+</div>
+<script>
+  function abrirPopup() {
+    document.getElementById("contatoPopup").style.display = "flex";
+  }
+
+  function fecharPopup() {
+    document.getElementById("contatoPopup").style.display = "none";
+  }
+</script>
+</body>
 
 </html>
