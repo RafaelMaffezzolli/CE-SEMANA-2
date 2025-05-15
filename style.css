@@ -261,11 +261,11 @@ html, body,main {
 .doe-info {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Centraliza os blocos */
+  align-items: center; 
   background-color: var(--lilas-secundario);
   padding: 40px 20px;
   font-family: 'Inter';
-  gap: 40px; /* aumenta o espaço entre os blocos */
+  gap: 40px; 
   padding-top: 80px;
 }
 
@@ -276,9 +276,9 @@ html, body,main {
 .doe-info div {
   display: flex;
   align-items: center;
-  justify-content: flex-start; /* alinha o conteúdo à esquerda */
+  justify-content: flex-start;
   width: 100%;
-  max-width: 500px; /* limita a largura para não esticar demais */
+  max-width: 500px;
   gap: 15px;
 }
 
@@ -286,7 +286,7 @@ html, body,main {
   font-weight: bold;
   font-size: 30px;
   margin: 0;
-  text-align: left; /* garante que o texto fique à esquerda */
+  text-align: left;
 }
 
 .branca-section {
@@ -339,7 +339,7 @@ html, body,main {
 
 .branca-box {
   display: flex;
-  align-items: flex-start; /* para alinhar pelo topo */
+  align-items: flex-start; 
   gap: 20px;
   background-color: #e6d3f1;
   border: 2px solid black;
@@ -348,21 +348,21 @@ html, body,main {
   max-width: 900px;
   width: 100%;
   box-sizing: border-box;
-  flex-wrap: nowrap; /* garantir que fique na mesma linha */
+  flex-wrap: nowrap; 
 }
 
 
 .branca-text-img-box img {
-  width: 150px; /* tamanho da imagem */
+  width: 150px; 
   border-radius: 10px;
 }
 
 .branca-text-img-box img {
-  width: 200px; /* tamanho fixo da imagem */
+  width: 200px; 
   height: auto;
   border-radius: 10px;
   object-fit: cover;
-  flex-shrink: 0; /* não encolhe */
+  flex-shrink: 0; 
 }
 /* doacoes */
 /* estatistica */
@@ -393,7 +393,7 @@ html, body,main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 30px; /* espaçamento maior entre os blocos */
+  gap: 30px; 
   font-size: 18px;
   font-weight: bold;
   padding: 10px 20px;
@@ -422,12 +422,11 @@ html, body,main {
   align-items: center;
   justify-content: center;
   text-align: center;
-  line-height: 1.2; /* um pouco mais de espaço se necessário */
-  min-width: 100px; /* ajuda a manter largura consistente para alinhamento */
+  line-height: 1.2; 
+  min-width: 100px; 
 }
 
 /* estatistica */
-
 
 /* pagina entre em contato */
 .pagina_contato {
@@ -528,3 +527,56 @@ input::placeholder {
   font-weight: bold;
   cursor: pointer;
 }
+/*estatisticas*/
+.conteudo-main {
+  background-color: #dbc5e1;
+  font-family: sans-serif;
+  padding: 20px;
+  color: #000;
+}
+
+.box {
+  background-color: #c0a7d2;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.box img {
+  width: 120px;
+  border-radius: 10px;
+}
+
+.box.destaque {
+  background-color: #b28dc6;
+  flex-direction: column;
+  text-align: center;
+}
+
+.box.destaque h3 {
+  margin-bottom: 10px;
+}
+
+.link-inscricao {
+  font-size: 0.9em;
+  word-break: break-word;
+}
+
+.estatisticas {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.botao-estatisticas {
+  padding: 10px 20px;
+  background-color: #8374b6;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/*estatisticas*/
