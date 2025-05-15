@@ -35,6 +35,7 @@ html, body,main {
 .top-bar img {
   width: 10%;
   height: 10%;
+  cursor: pointer;
 }
 
 .logo-branca img {
@@ -530,7 +531,7 @@ input::placeholder {
 /*estatisticas*/
 .conteudo-main {
   background-color: var(--lilas-secundario);
-  font-family: sans-serif;
+  font-family: var(--fonte-secundaria);
   padding: 30px;
   color: #000;
 }
@@ -587,6 +588,7 @@ input::placeholder {
 }
 
 .conteudo-main p {
+  font-family: var(--fonte-secundaria);
   font-size: 18px;
   line-height: 1.5;
   margin: 0;
