@@ -531,13 +531,12 @@ input::placeholder {
 .conteudo-main {
   background-color: var(--lilas-secundario);
   font-family: sans-serif;
-  padding: 20px;
+  padding: 30px;
   color: #000;
 }
 
 .box {
   background-color: #817CAD;
-  padding: 20px;
   margin-bottom: 20px;
   border-radius: 10px;
   display: flex;
@@ -552,8 +551,12 @@ input::placeholder {
 
 .box.destaque {
   background-color: #817CAD;
-  flex-direction: column;
   text-align: center;
+}
+
+
+.texto.destaque{
+  text-align: justify;
 }
 
 .box.destaque h3 {
@@ -577,6 +580,17 @@ input::placeholder {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+}
+
+.conteudo-main img {
+  width: 170px;
+}
+
+.conteudo-main p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 0;
+  text-align: justify;
 }
 
 /*estatisticas*/
