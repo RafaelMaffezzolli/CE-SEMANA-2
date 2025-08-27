@@ -40,14 +40,13 @@ html, body,main {
 
 .logo-branca img {
   width: 20%;
-  height: 15%;
-  padding: 0px 0px 0px 10px;
+  padding-left: 10px;
 }
 
 .menu{
   display: flex;
   align-items: center;
-  gap: 0 20px 0 0;
+  gap: 0 10px 0 0;
 }
 
 .menu div {
@@ -92,7 +91,7 @@ html, body,main {
   top: 70%;
   left: 84%;
   background-color: var(--roxo-principal);
-  color: white;
+  color: var(--branco-texto);
   padding: 10px 20px;
   border: none;
   cursor: pointer;
@@ -196,7 +195,7 @@ html, body,main {
   top: 50%;               
   left: 50%;              
   transform: translate(-50%, -50%); 
-  color: white;           
+  color: var(--branco-texto);           
   background-color: rgba(0, 0, 0, 0.5); 
   margin: 0 ;
   font-size: 36px;
@@ -243,7 +242,7 @@ html, body,main {
   top: 50%;               
   left: 50%;              
   transform: translate(-50%, -50%); 
-  color: white;           
+  color: var(--branco-texto);           
   background-color: rgba(0, 0, 0, 0.5); 
   font-size: 18px;
 }
@@ -371,7 +370,7 @@ html, body,main {
   background-color: var(--lilas-secundario);
   padding: 60px 20px;
   font-family: 'Inter', sans-serif;
-  color: #000;
+  color: var(--preto-texto);
 }
 
 .titulo-estatisticas {
@@ -533,7 +532,7 @@ input::placeholder {
   background-color: var(--lilas-secundario);
   font-family: var(--fonte-secundaria);
   padding: 30px;
-  color: #000;
+  color: var(--preto-texto);
 }
 
 .box {
@@ -577,7 +576,7 @@ input::placeholder {
 .botao-estatisticas {
   padding: 10px 20px;
   background-color: var(--roxo-principal);
-  color: white;
+  color: var(--branco-texto);
   border: none;
   border-radius: 5px;
   cursor: pointer;
